@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM  from "react-dom";
+import PrimeraApp from "./PrimeraApp";
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//const saludo = <h1>Hola Mundo</h1>;
+
+
+//const divRoot = document.querySelector('#root');
+
+//se visualiza el elemento div con el nombre #root en consola
+//console.log(divRoot);
+
+//ReactDOM.render( saludo, divRoot );
+
+//a estas alturas, nos podríamos preguntar: ¿no sería más fácil hacerlo de
+//la siguiente manera
+
+//document.body.append( saludo );
+
+//en teoría si daría el mismo resultado, pero hay que sacar provecho de
+//Que ReactDOM nos ofrece otras características y de paso empezamos
+//a crear nuestro árbol de componentes (y a comunicarse entre componentes de 
+//manera sencilla)
+
+const divRoot = document.querySelector('#app');
+
+ReactDOM.render( <PrimeraApp /> , divRoot );
+
