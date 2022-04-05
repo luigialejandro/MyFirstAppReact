@@ -1,6 +1,7 @@
-import React from "react";
-import ReactDOM  from "react-dom";
-import PrimeraApp from "./PrimeraApp";
+import React from 'react';
+import ReactDOM  from 'react-dom';
+//import PrimeraApp from './PrimeraApp';
+import CounterApp from './CounterApp';
 
 import './index.css';
 
@@ -25,7 +26,7 @@ import './index.css';
 //a crear nuestro árbol de componentes (y a comunicarse entre componentes de 
 //manera sencilla)
 
-const divRoot = document.querySelector('#app');
+const divRoot = document.querySelector('#root');
 
-ReactDOM.render( <PrimeraApp /> , divRoot );
+ReactDOM.render( <CounterApp value={ 10 } /> , divRoot );
 
